@@ -1,0 +1,84 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+wheels/
+*.manifest
+*.spec
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Virtual environments
+.env
+.venv
+venv/
+robotics_env/
+
+# PyTorch checkpoints and runs (too large for git)
+runs/
+outputs/
+*.pt
+*.pth
+*.ckpt
+
+# Datasets (too large for git)
+1_ball_demos_v2/
+2_ball_demos_v2/
+4_ball_demos_v2/
+panda_sort_merged_v2/
+panda_sort_all/
+*.parquet
+*.mp4
+*.avi
+
+# MuJoCo
+*.mjb
+*.stl
+*.obj
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+*.csv
+wandb/
+
+# HuggingFace cache
+.cache/
+
+camera_test/
+diag_smolvla/
+
+MUJOCO_LOG.txt
+
+1_ball_demos/
+2_ball_demos/
+4_ball_demos/
+panda_sort_merged/
