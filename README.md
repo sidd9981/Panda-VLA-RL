@@ -24,7 +24,7 @@ The sorting task is deliberately chosen as a structured testbed: it requires the
 | Method | 1-ball | 2-ball | 4-ball | Vision-only inference? |
 |---|---|---|---|---|
 | State SAC + HRL | 100% | 100% | 100% | No |
-| CNN + SAC (DrQ) | 100% | ~15% | — | Yes |
+| CNN + SAC (DrQ) | 100% | ~30% | — | Yes |
 | Frozen VLM + SAC | 100% | 30-40% (no re-prompt) | — | Yes |
 | Frozen VLM + SAC + re-prompt | 100% | 50-60% (preliminary) | — | Yes |
 
@@ -76,7 +76,7 @@ Flat SAC cannot sequence multiple objects — proved empirically, plateaued at 3
 
 Result: 100% on 2-ball and 4-ball
 
-![State HRL demo](assets/gifs/hrl_2ball_side.gif)
+![State HRL demo](assets/gifs/hrl_2ball_overhead.gif)
 
 ---
 
@@ -94,7 +94,7 @@ Removed all privileged state from the policy observation. Ball and bin positions
 
 ### Results
 - 1-ball: 100% at 500K steps
-- 2-ball: ~15% — CNN has no mechanism to re-target after first ball sorted
+- 2-ball: ~30% — CNN has no mechanism to re-target after first ball sorted
 
 The CNN encodes what it sees but has no semantic understanding of language instructions. It cannot re-target based on a changed task description.
 
